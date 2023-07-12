@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ControllerUserSignIn_3">
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #191414;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="60.0" fitWidth="170.0" layoutX="15.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Spotify_Logo_RGB_Green.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="42.0" layoutY="143.0" text="Listening" textFill="#1ed760">
+                    <font>
+                        <Font name="Bodoni MT Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="56.0" layoutY="181.0" prefHeight="38.0" prefWidth="87.0" text="is" textFill="#1ed760">
+                    <font>
+                        <Font name="Bodoni MT Bold Italic" size="30.0" />
+                    </font>
+                </Label>
+                <Label layoutX="17.0" layoutY="219.0" text="Everything!" textFill="#1ed760">
+                    <font>
+                        <Font name="Bodoni MT Bold Italic" size="30.0" />
+                    </font>
+                </Label>
+                <Label layoutX="51.0" layoutY="349.0" text="User Sign In" textFill="#1ed760">
+                    <font>
+                        <Font name="Bodoni MT Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #1ed760;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" layoutX="41.0" layoutY="58.0" prefHeight="41.0" prefWidth="95.0" text="Username" textFill="#171313">
+                    <font>
+                        <Font name="Bodoni MT Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="41.0" layoutY="152.0" prefHeight="41.0" prefWidth="95.0" text="Password" textFill="#171313">
+                    <font>
+                        <Font name="Bodoni MT Bold Italic" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameField" layoutX="182.0" layoutY="66.0" promptText="Username" style="-fx-background-color: #191414; -fx-text-fill: #1ed760;" />
+                <Button layoutX="213.0" layoutY="259.0" mnemonicParsing="false" onAction="#userSignIn" style="-fx-background-color: #191414;" text="Sign In" textFill="#1ed760">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="69.0" layoutY="259.0" mnemonicParsing="false" onAction="#switchToSceneUser" style="-fx-background-color: #191414;" text="Back" textFill="#1ed760">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Button>
+                <PasswordField fx:id="passwordField" layoutX="184.0" layoutY="160.0" promptText="Password" style="-fx-background-color: #191414; -fx-text-fill: #1ed760;" />
+                <Label fx:id="warning" alignment="CENTER" layoutX="11.0" layoutY="14.0" prefHeight="30.0" prefWidth="378.0" textFill="RED">
+                    <font>
+                        <Font name="System Italic" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

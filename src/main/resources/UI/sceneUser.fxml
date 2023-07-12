@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ControllerSceneUser_2">
+    <top>
+        <AnchorPane prefHeight="175.0" prefWidth="600.0" style="-fx-background-color: #191414;" BorderPane.alignment="CENTER">
+            <effect>
+                <Glow />
+            </effect>
+            <children>
+                <Label alignment="CENTER" layoutX="141.0" layoutY="44.0" prefHeight="88.0" prefWidth="319.0" style="-fx-background-color: #1ED760;" text="User" textFill="#191414">
+                    <font>
+                        <Font name="System Bold Italic" size="60.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <bottom>
+        <AnchorPane prefHeight="225.0" prefWidth="600.0" style="-fx-background-color: #1ED760;" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="14.0" layoutY="29.0" mnemonicParsing="false" onAction="#switchToUserSignUp" prefHeight="72.0" prefWidth="246.0" style="-fx-background-color: #191414;" text="Sign Up" textFill="#1ed760">
+                    <font>
+                        <Font name="System Bold Italic" size="40.0" />
+                    </font>
+                </Button>
+                <Button layoutX="333.0" layoutY="29.0" mnemonicParsing="false" onAction="#switchToUserSignIn" prefHeight="64.0" prefWidth="253.0" style="-fx-background-color: #191414;" text="Sign In" textFill="#1ed760">
+                    <font>
+                        <Font name="System Bold Italic" size="40.0" />
+                    </font>
+                </Button>
+                <Button layoutX="206.0" layoutY="127.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="84.0" prefWidth="188.0" style="-fx-background-color: #191414;" text="Back" textFill="#1ed760">
+                    <font>
+                        <Font name="System Bold Italic" size="40.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

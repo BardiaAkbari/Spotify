@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ControllerArtistPage_23">
+   <left>
+      <AnchorPane prefHeight="499.0" prefWidth="178.0" style="-fx-background-color: #191414;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="170.0" layoutX="8.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Spotify_Logo_RGB_Green.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="42.0" layoutY="455.0" text="Artist Page" textFill="#1ed760">
+               <font>
+                  <Font name="Bodoni MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" alignment="CENTER" layoutX="3.0" layoutY="120.0" prefHeight="40.0" prefWidth="172.0" style="-fx-background-color: #191414;" text="Name" textFill="#1ed760">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #1ed760;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="musicsTableView" layoutX="282.0" layoutY="101.0" prefHeight="390.0" prefWidth="393.0" style="-fx-background-color: #1ed760; -fx-border-color: #191414; -fx-border-width: 5;">
+               <columns>
+                  <TableColumn fx:id="titleColumn" prefWidth="145.0" style="-fx-background-color: #1394ab;" text="Title" />
+                  <TableColumn fx:id="albumColumn" minWidth="0.0" prefWidth="97.0" style="-fx-background-color: #1394ab;" text="Album" />
+                  <TableColumn fx:id="artistsColumn" minWidth="0.0" prefWidth="140.0" style="-fx-background-color: #1394ab;" text="Artists" />
+                  <TableColumn fx:id="trackIDColumn" minWidth="0.0" prefWidth="0.0" style="-fx-background-color: #1394ab;" text="Track_ID" />
+               </columns>
+            </TableView>
+            <TextField fx:id="musicsSearch" layoutX="316.0" layoutY="67.0" prefHeight="25.0" prefWidth="324.0" promptText="Search" style="-fx-background-color: #191414; -fx-text-fill: #1ed760;" />
+            <TableView fx:id="followersTableView" layoutX="55.0" layoutY="101.0" prefHeight="390.0" prefWidth="146.0" style="-fx-background-color: #1ed760; -fx-border-color: #191414; -fx-border-width: 5;">
+               <columns>
+                  <TableColumn fx:id="followersColumn" prefWidth="140.0" style="-fx-background-color: #1394ab;" text="Users" />
+                  <TableColumn fx:id="followersIDColumn" minWidth="0.0" prefWidth="0.0" style="-fx-background-color: #1394ab;" text="ID" />
+               </columns>
+            </TableView>
+            <TextField fx:id="followersSearch" layoutX="89.0" layoutY="67.0" prefHeight="25.0" prefWidth="78.0" promptText="Search" style="-fx-background-color: #191414; -fx-text-fill: #1ed760;" />
+            <Label alignment="CENTER" layoutX="63.0" layoutY="21.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #191414;" text="Followers" textFill="#1ed760">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="413.0" layoutY="21.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #191414;" text="Musics" textFill="#1ed760">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

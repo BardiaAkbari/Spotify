@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ControllerUserPage_22">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="133.0" style="-fx-background-color: #191414;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="150.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Spotify_Logo_RGB_Green.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="43.0" layoutY="450.0" text="User Page" textFill="#1ed760">
+               <font>
+                  <Font name="Bodoni MT Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameLabel" alignment="CENTER" layoutX="4.0" layoutY="106.0" prefHeight="36.0" prefWidth="165.0" style="-fx-background-color: #191414;" text="Username" textFill="#1ed760">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="26.0" layoutY="228.0" mnemonicParsing="false" onAction="#viewPlaylist" prefHeight="77.0" prefWidth="118.0" style="-fx-background-color: #1ed760;" text="  View &#10;Playlist" textFill="#191414">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="1218.0" style="-fx-background-color: #1ed760;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="followersSearch" layoutX="48.0" layoutY="61.0" prefHeight="25.0" prefWidth="78.0" promptText="Search" style="-fx-background-color: #191414; -fx-text-fill: #1ed760;" />
+            <TableView fx:id="followersTableView" layoutX="14.0" layoutY="102.0" prefHeight="384.0" prefWidth="146.0" style="-fx-background-color: #1ed760; -fx-border-color: #191414; -fx-border-width: 5;">
+               <columns>
+                  <TableColumn fx:id="followersColumn" prefWidth="142.0" style="-fx-background-color: #1394ab;" text="Users" />
+                  <TableColumn fx:id="followersIDColumn" minWidth="0.0" prefWidth="0.0" style="-fx-background-color: #1394ab;" text="ID" />
+               </columns>
+            </TableView>
+            <TableView fx:id="userFollowingsTableView" layoutX="182.0" layoutY="102.0" prefHeight="384.0" prefWidth="146.0" style="-fx-background-color: #1ed760; -fx-border-color: #191414; -fx-border-width: 5;">
+               <columns>
+                  <TableColumn fx:id="userFollowingsColumn" prefWidth="140.0" style="-fx-background-color: #1394ab;" text="Users" />
+                  <TableColumn fx:id="userFollowingsIDColumn" minWidth="0.0" prefWidth="0.0" style="-fx-background-color: #1394ab;" text="ID" />
+               </columns>
+            </TableView>
+            <TableView fx:id="artistFollowingsTableView" layoutX="348.0" layoutY="102.0" prefHeight="384.0" prefWidth="146.0" style="-fx-background-color: #1ed760; -fx-border-color: #191414; -fx-border-width: 5;">
+               <columns>
+                  <TableColumn fx:id="artistFollowingsColumn" prefWidth="140.0" style="-fx-background-color: #1394ab;" text="Artists" />
+                  <TableColumn fx:id="artistFollowingsIDColumn" minWidth="0.0" prefWidth="0.0" style="-fx-background-color: #1394ab;" text="ID" />
+               </columns>
+            </TableView>
+            <TableView fx:id="playlistsTableView" layoutX="516.0" layoutY="101.0" prefHeight="384.0" prefWidth="146.0" style="-fx-background-color: #1ed760; -fx-border-color: #191414; -fx-border-width: 5;">
+               <columns>
+                  <TableColumn fx:id="playlistsColumn" prefWidth="140.0" style="-fx-background-color: #1394ab;" text="Playlists" />
+                  <TableColumn fx:id="playlistsIDColumn" minWidth="0.0" prefWidth="0.0" style="-fx-background-color: #1394ab;" text="ID" />
+               </columns>
+            </TableView>
+            <TextField fx:id="userFollowingsSearch" layoutX="216.0" layoutY="61.0" prefHeight="25.0" prefWidth="78.0" promptText="Search" style="-fx-background-color: #191414; -fx-text-fill: #1ed760;" />
+            <TextField fx:id="artistFollowingsSearch" layoutX="382.0" layoutY="61.0" prefHeight="25.0" prefWidth="78.0" promptText="Search" style="-fx-background-color: #191414; -fx-text-fill: #1ed760;" />
+            <TextField fx:id="playlistsSearch" layoutX="550.0" layoutY="61.0" prefHeight="25.0" prefWidth="78.0" promptText="Search" style="-fx-background-color: #191414; -fx-text-fill: #1ed760;" />
+            <TextField fx:id="likesSearch" layoutX="1010.0" layoutY="61.0" prefHeight="25.0" prefWidth="78.0" promptText="Search" style="-fx-background-color: #191414; -fx-text-fill: #1ed760;" />
+            <Label alignment="CENTER" layoutX="22.0" layoutY="14.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #191414;" text="Followers" textFill="#1ed760">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="184.0" layoutY="14.0" prefHeight="36.0" prefWidth="142.0" style="-fx-background-color: #191414;" text="Followings" textFill="#1ed760">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="350.0" layoutY="14.0" prefHeight="36.0" prefWidth="142.0" style="-fx-background-color: #191414;" text="Followings" textFill="#1ed760">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="524.0" layoutY="14.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #191414;" text="Playlists" textFill="#1ed760">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="984.0" layoutY="14.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #191414;" text="Likes" textFill="#1ed760">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <TableView fx:id="likesTableView" layoutX="933.0" layoutY="101.0" prefHeight="383.0" prefWidth="231.0" style="-fx-background-color: #1ed760; -fx-border-color: #191414; -fx-border-width: 5;">
+               <columns>
+                  <TableColumn fx:id="titleColumn" prefWidth="93.0" style="-fx-background-color: #1394ab;" text="Title" />
+                  <TableColumn fx:id="artistsColumn" prefWidth="132.0" style="-fx-background-color: #1394ab;" text="Artists" />
+               </columns>
+            </TableView>
+            <TableView fx:id="musicTableView" layoutX="683.0" layoutY="101.0" prefHeight="383.0" prefWidth="231.0" style="-fx-background-color: #1ed760; -fx-border-color: #191414; -fx-border-width: 5;">
+               <columns>
+                  <TableColumn fx:id="musicTitleColumn" prefWidth="93.0" style="-fx-background-color: #1394ab;" text="Title" />
+                  <TableColumn fx:id="musicArtistColumn" prefWidth="132.0" style="-fx-background-color: #1394ab;" text="Artists" />
+               </columns>
+            </TableView>
+            <TextField fx:id="musicsSearch" layoutX="760.0" layoutY="61.0" prefHeight="25.0" prefWidth="78.0" promptText="Search" style="-fx-background-color: #191414; -fx-text-fill: #1ed760;" />
+            <Label alignment="CENTER" layoutX="691.0" layoutY="14.0" prefHeight="36.0" prefWidth="215.0" style="-fx-background-color: #191414;" text="Viewed Playlist" textFill="#1ed760">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
