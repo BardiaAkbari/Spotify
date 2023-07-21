@@ -270,7 +270,7 @@ public class UserResponse {
         ResultSet resultSet = statement.executeQuery(sqlCommand);
         resultSet.next();
         String file_path = resultSet.getString(1);
-        File file = new File("D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\src\\main\\resources\\AllMusics\\" + file_path + ".mp3");
+        File file = new File("D:\\Final Projects\\Term 2\\Spotify\\src\\main\\resources\\AllMusics\\" + file_path + ".mp3");
         FileInputStream fileInputStream = new FileInputStream(file.getAbsolutePath());
         String fileName = file.getName();
         byte[] fileNameBytes = fileName.getBytes();
@@ -289,7 +289,7 @@ public class UserResponse {
         ResultSet resultSet = statement.executeQuery(sqlCommand);
         resultSet.next();
         String file_path = resultSet.getString(1);
-        String answer = "D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\src\\main\\resources\\AllMusics\\" + file_path + ".mp3";
+        String answer = "D:\\Final Projects\\Term 2\\Spotify\\src\\main\\resources\\AllMusics\\" + file_path + ".mp3";
         this.output.writeUTF(answer);
     }
 

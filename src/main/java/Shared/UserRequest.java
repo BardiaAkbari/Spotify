@@ -240,11 +240,11 @@ public class UserRequest {
         int file_content_len = this.input.readInt();
         byte[] file_content = new byte[file_content_len];
         this.input.readFully(file_content, 0, file_content_len);
-        File file = new File("D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\UserDownloads\\" + username);
+        File file = new File("D:\\Final Projects\\Term 2\\Spotify\\UserDownloads\\" + username);
         if (!file.exists()) {
             boolean creat = file.mkdir();
         }
-        String okFilePath = "D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\UserDownloads\\" + username + "\\" + fileName;
+        String okFilePath = "D:\\Final Projects\\Term 2\\Spotify\\UserDownloads\\" + username + "\\" + fileName;
         File okFile = new File(okFilePath);
         FileOutputStream fileOutputStream = new FileOutputStream(okFile);
         fileOutputStream.write(file_content);

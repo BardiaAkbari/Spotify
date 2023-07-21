@@ -26,7 +26,7 @@ public class Main extends Application {
             UserRequest userRequest = new UserRequest(input, output, socket);
             // UI
             primaryStage.setTitle("Spotify");
-            primaryStage.getIcons().add(new Image("D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\src\\main\\resources\\UI\\spotify-icon-marilyn-scott-0.png"));
+            primaryStage.getIcons().add(new Image("D:\\Final Projects\\Term 2\\Spotify\\src\\main\\resources\\UI\\spotify-icon-marilyn-scott-0.png"));
             FXMLLoader loader = new FXMLLoader(getClass().getResource("scene1.fxml"));
             Parent root = loader.load();
             ControllerScene1_1 controllerScene1 = loader.getController();

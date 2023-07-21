@@ -83,9 +83,9 @@ public class ControllerMusicPlayer_18 implements Initializable {
         Image exitImage;
         Image minimizeImage;
         try {
-            exitImage = new Image(new FileInputStream("D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\src\\main\\resources\\UI\\exit2.png"));
+            exitImage = new Image(new FileInputStream("D:\\Final Projects\\Term 2\\Spotify\\src\\main\\resources\\UI\\exit2.png"));
             exit.setGraphic(new ImageView(exitImage));
-            minimizeImage = new Image(new FileInputStream("D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\src\\main\\resources\\UI\\minimize2.png"));
+            minimizeImage = new Image(new FileInputStream("D:\\Final Projects\\Term 2\\Spotify\\src\\main\\resources\\UI\\minimize2.png"));
             minimize.setGraphic(new ImageView(minimizeImage));
         }
         catch (FileNotFoundException e) {
@@ -150,7 +150,7 @@ public class ControllerMusicPlayer_18 implements Initializable {
     public void showLyrics(ActionEvent event) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("Spotify");
-        stage.getIcons().add(new Image("D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\src\\main\\resources\\UI\\spotify-icon-marilyn-scott-0.png"));
+        stage.getIcons().add(new Image("D:\\Final Projects\\Term 2\\Spotify\\src\\main\\resources\\UI\\spotify-icon-marilyn-scott-0.png"));
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("showLyrics.fxml"));
         loader.setControllerFactory(type -> {

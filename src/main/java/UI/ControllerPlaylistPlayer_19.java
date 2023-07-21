@@ -90,9 +90,9 @@ public class ControllerPlaylistPlayer_19 implements Initializable {
         Image exitImage;
         Image minimizeImage;
         try {
-            exitImage = new Image(new FileInputStream("D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\src\\main\\resources\\UI\\exit2.png"));
+            exitImage = new Image(new FileInputStream("D:\\Final Projects\\Term 2\\Spotify\\src\\main\\resources\\UI\\exit2.png"));
             exit.setGraphic(new ImageView(exitImage));
-            minimizeImage = new Image(new FileInputStream("D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\src\\main\\resources\\UI\\minimize2.png"));
+            minimizeImage = new Image(new FileInputStream("D:\\Final Projects\\Term 2\\Spotify\\src\\main\\resources\\UI\\minimize2.png"));
             minimize.setGraphic(new ImageView(minimizeImage));
         }
         catch (FileNotFoundException e) {

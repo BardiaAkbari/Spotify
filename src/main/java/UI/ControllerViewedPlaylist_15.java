@@ -140,7 +140,7 @@ public class ControllerViewedPlaylist_15 implements Initializable {
     public void playButton(ActionEvent event) throws IOException {
         Stage stage = new Stage();
         stage.setTitle("Spotify");
-        stage.getIcons().add(new Image("D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\src\\main\\resources\\UI\\spotify-icon-marilyn-scott-0.png"));
+        stage.getIcons().add(new Image("D:\\Final Projects\\Term 2\\Spotify\\src\\main\\resources\\UI\\spotify-icon-marilyn-scott-0.png"));
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("playlistPlayer.fxml"));
         loader.setControllerFactory(type -> {

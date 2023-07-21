@@ -128,7 +128,7 @@ public class ControllerSearchUser_9 implements Initializable {
             message.setText("");
             Stage stage = new Stage();
             stage.setTitle("Spotify");
-            stage.getIcons().add(new Image("D:\\SBU\\Term 2\\AP\\Assignments\\Spotify\\src\\main\\resources\\UI\\spotify-icon-marilyn-scott-0.png"));
+            stage.getIcons().add(new Image("D:\\Final Projects\\Term 2\\Spotify\\src\\main\\resources\\UI\\spotify-icon-marilyn-scott-0.png"));
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("userPage.fxml"));
             loader.setControllerFactory(type -> {
