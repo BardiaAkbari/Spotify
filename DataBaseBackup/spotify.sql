@@ -60,7 +60,7 @@ CREATE TABLE `liked` (
 
 LOCK TABLES `liked` WRITE;
 /*!40000 ALTER TABLE `liked` DISABLE KEYS */;
-INSERT INTO `liked` VALUES ('e7dafd2d-c590-40d5-9934-1b76110086d1','3'),('e7dafd2d-c590-40d5-9934-1b76110086d1','2'),('e7dafd2d-c590-40d5-9934-1b76110086d1','5'),('e7dafd2d-c590-40d5-9934-1b76110086d1','10'),('8d6cfa74-cf67-4116-bac4-541605990135','9'),('8d6cfa74-cf67-4116-bac4-541605990135','5'),('8d6cfa74-cf67-4116-bac4-541605990135','11'),('8d6cfa74-cf67-4116-bac4-541605990135','3'),('8d6cfa74-cf67-4116-bac4-541605990135','8'),('8d6cfa74-cf67-4116-bac4-541605990135','10'),('8d6cfa74-cf67-4116-bac4-541605990135','1'),('8d6cfa74-cf67-4116-bac4-541605990135','2'),('e7dafd2d-c590-40d5-9934-1b76110086d1','9'),('e7dafd2d-c590-40d5-9934-1b76110086d1','11'),('e7dafd2d-c590-40d5-9934-1b76110086d1','4'),('1e2ee09b-820f-45e3-9ae9-c10d23999daf','7'),('1e2ee09b-820f-45e3-9ae9-c10d23999daf','4'),('87c95086-6db3-4871-8233-0401af8a377d','9'),('87c95086-6db3-4871-8233-0401af8a377d','4'),('87c95086-6db3-4871-8233-0401af8a377d','8'),('87c95086-6db3-4871-8233-0401af8a377d','10'),('87c95086-6db3-4871-8233-0401af8a377d','3'),('a3574147-3367-4f82-978f-043a4ccb2e2f','3'),('a3574147-3367-4f82-978f-043a4ccb2e2f','9'),('a3574147-3367-4f82-978f-043a4ccb2e2f','5');
+INSERT INTO `liked` VALUES ('e7dafd2d-c590-40d5-9934-1b76110086d1','3'),('e7dafd2d-c590-40d5-9934-1b76110086d1','2'),('e7dafd2d-c590-40d5-9934-1b76110086d1','5'),('e7dafd2d-c590-40d5-9934-1b76110086d1','10'),('8d6cfa74-cf67-4116-bac4-541605990135','9'),('8d6cfa74-cf67-4116-bac4-541605990135','5'),('8d6cfa74-cf67-4116-bac4-541605990135','11'),('8d6cfa74-cf67-4116-bac4-541605990135','3'),('8d6cfa74-cf67-4116-bac4-541605990135','8'),('8d6cfa74-cf67-4116-bac4-541605990135','10'),('8d6cfa74-cf67-4116-bac4-541605990135','1'),('8d6cfa74-cf67-4116-bac4-541605990135','2'),('e7dafd2d-c590-40d5-9934-1b76110086d1','9'),('e7dafd2d-c590-40d5-9934-1b76110086d1','11'),('e7dafd2d-c590-40d5-9934-1b76110086d1','4'),('1e2ee09b-820f-45e3-9ae9-c10d23999daf','7'),('1e2ee09b-820f-45e3-9ae9-c10d23999daf','4'),('87c95086-6db3-4871-8233-0401af8a377d','9'),('87c95086-6db3-4871-8233-0401af8a377d','4'),('87c95086-6db3-4871-8233-0401af8a377d','8'),('87c95086-6db3-4871-8233-0401af8a377d','10'),('87c95086-6db3-4871-8233-0401af8a377d','3');
 /*!40000 ALTER TABLE `liked` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -206,7 +206,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('e7dafd2d-c590-40d5-9934-1b76110086d1','Bardia','bardia','Bardia@gmail.com'),('8d6cfa74-cf67-4116-bac4-541605990135','Navid','Navid','Navid@gmail.com'),('76679e87-77c8-4c1d-a48f-412a7f446fe5','Ehsan','Ehsan','ehsan@gmail.com'),('a3123f32-c6c5-4dbb-82dc-c912b745b181','Ali','Ali','Ali@gmail.com'),('1e2ee09b-820f-45e3-9ae9-c10d23999daf','nariman','nariman','akbarin223@gmail.com'),('87c95086-6db3-4871-8233-0401af8a377d','ArianKoni','ArianKoni','Arian@gmail.com'),('a3574147-3367-4f82-978f-043a4ccb2e2f','mamadi','jjj','iiiii');
+INSERT INTO `user` VALUES ('e7dafd2d-c590-40d5-9934-1b76110086d1','Bardia','bardia','Bardia@gmail.com'),('8d6cfa74-cf67-4116-bac4-541605990135','Navid','Navid','Navid@gmail.com'),('76679e87-77c8-4c1d-a48f-412a7f446fe5','Ehsan','Ehsan','ehsan@gmail.com'),('a3123f32-c6c5-4dbb-82dc-c912b745b181','Ali','Ali','Ali@gmail.com'),('1e2ee09b-820f-45e3-9ae9-c10d23999daf','nariman','nariman','akbarin223@gmail.com'),('87c95086-6db3-4871-8233-0401af8a377d','ArianKoni','ArianKoni','Arian@gmail.com');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -265,4 +265,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-13  2:13:00
+-- Dump completed on 2023-07-29 14:29:46
