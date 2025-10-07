@@ -30,7 +30,7 @@ public class UserResponse {
         String sqlCommand = "SELECT count(*) FROM user WHERE username = " + '"' + username + '"';
         ResultSet checkUsernameResult = statement.executeQuery(sqlCommand);
         checkUsernameResult.next();
-        int numberCheck = Integer.parseInt(checkUsernameResult.getString("count(*)"));
+        int numberCheck = Integer.parseInt(checkUsernameResult.getString(1));
         boolean answer = numberCheck != 0;
         this.output.writeUTF(String.valueOf(answer));
         this.output.flush();
